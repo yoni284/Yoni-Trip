@@ -1,0 +1,71 @@
+
+body {
+ text-align:center;
+ padding:10px;
+  background-color: ivory;
+  font-size: 16px;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.framed-image {
+    border: 5px solid black; /* מסגרת שחורה בעובי 5 פיקסלים */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל עדין */
+    width: 200px; /* רוחב התמונה */
+}
+
+.section {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.section:hover {
+    transform: scale(1.05); /* הגדלה קלה בעת מעבר עכבר */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* צל בולט יותר */
+}
+ 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+.container {
+    border: 3px solid #333; /* מסגרת עבה בצבע אפור כהה */
+    display: flex;
+    justify-content: space-around; /* מרכז את המקטעים בתוך הקונטיינר */
+  width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    flex-direction: row;
+  }
+   .section {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+}
